@@ -1,0 +1,198 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 75px;
+    padding-bottom: 65px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Fixed Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 40px;
+    background-color: #172554;
+    color: white;
+    border-bottom: 4px solid #38bdf8;
+    z-index: 1000;
+}
+
+nav h2 {
+    display: inline;
+    margin: 0;
+}
+
+nav span {
+    float: right;
+    color: #bae6fd;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border-radius: 12px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+}
+
+section h2 {
+    color: #1d4ed8;
+    margin-top: 0;
+}
+
+/* Static Positioning */
+.static-box {
+    position: static;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+}
+
+/* Relative Positioning */
+.relative-box {
+    position: relative;
+    left: 25px;
+    top: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #dcfce7;
+    border: 2px solid #16a34a;
+}
+
+/* Absolute Positioning */
+.absolute-parent {
+    position: relative;
+    height: 150px;
+    padding: 15px;
+    background-color: #fef3c7;
+    border: 2px dashed #d97706;
+    border-radius: 8px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    padding: 12px;
+    background-color: #fed7aa;
+    border: 2px solid #ea580c;
+    border-radius: 6px;
+}
+
+/* Sticky Positioning */
+.sticky-box {
+    position: sticky;
+    top: 56px;
+    z-index: 10;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f3e8ff;
+    border: 2px solid #9333ea;
+    border-radius: 8px;
+}
+
+/* Float Property */
+.float-box {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+    padding: 25px 10px;
+    text-align: center;
+    background-color: #cffafe;
+    border: 2px solid #0e7490;
+    border-radius: 10px;
+}
+
+.float-box h3 {
+    color: #155e75;
+}
+
+/* Clear Float */
+.float-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Fixed Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: #172554;
+    color: white;
+    border-top: 4px solid #38bdf8;
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px;
+    }
+
+    nav h2 {
+        font-size: 18px;
+    }
+
+    nav span {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .float-box {
+        float: none;
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    .relative-box {
+        left: 8px;
+    }
+
+    .absolute-box {
+        right: 8px;
+        font-size: 13px;
+    }
+}

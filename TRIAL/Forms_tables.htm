@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form and Table Example</title>
+</head>
+<body>
+  <h1>Student Registration & Timetable</h1>
+
+  <!-- Registration Form -->
+  <form>
+    <fieldset>
+      <legend>Student Information</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course">
+        <option value="cse">Computer Science</option>
+        <option value="ece">Electronics</option>
+        <option value="mech">Mechanical</option>
+      </select><br><br>
+
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address" rows="3" cols="30"></textarea><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <hr>
+
+  <!-- Timetable Table -->
+  <h2>Weekly Timetable</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>9–10 AM</th>
+        <th>10–11 AM</th>
+        <th>11–12 PM</th>
+        <th>12–1 PM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>Math</td>
+        <td>Physics</td>
+        <td>CS103 Lab</td>
+        <td>Break</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Electronics</td>
+        <td>Math</td>
+        <td>CS101</td>
+        <td>Break</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">*Timetable subject to change</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

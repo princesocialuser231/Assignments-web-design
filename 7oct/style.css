@@ -1,0 +1,60 @@
+ 
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      width: 300px;
+      margin: 50px auto; /* centers the card horizontally */
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; /* circular profile picture */
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    .card ul li {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .card button {
+      padding: 10px 20px;
+      border: 1px solid #4CAF50;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #45a049;
+      transform: scale(1.05); /* slight zoom effect */
+    }
+  

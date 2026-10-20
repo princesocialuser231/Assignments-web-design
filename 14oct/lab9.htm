@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning and Float</title>
+    <link rel="stylesheet" href="style.css  ">
+</head>
+
+<body>
+
+    <nav>
+        <h2>CSS Lab</h2>
+        <span>Positioning & Float</span>
+    </nav>
+    
+
+    <div class="container">
+
+        <header>
+            <h1>CSS Positioning Properties</h1>
+           
+        </header>
+
+        <section>
+            <h2>1. Static Positioning</h2>
+            <p>Static is the default positioning method. The element follows
+               the normal flow of the document.</p>
+
+            <div class="static-box">
+                Static Box: I stay in the normal document flow.
+            </div>
+        </section>
+
+        <section>
+        
+            <h2>2. Sticky Positioning</h2>
+            <p>Scroll the page to observe the sticky element. It sticks
+               near the top of the viewport while its section scrolls.</p>
+
+            <div class="sticky-box">
+                Sticky Box: I stick below the navigation bar!
+            </div>
+
+            <p>Sticky positioning combines normal document flow with
+               position-based movement during scrolling.</p>
+            
+        </section>
+            
+            
+
+        <section>
+            <h2>3. Relative Positioning</h2>
+            <p>A relatively positioned element moves from its original position
+               while its original space remains reserved.</p>
+
+            <div class="relative-box">
+                Relative Box: Shifted 25px right and 10px down.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Absolute Positioning</h2>
+            <p>An absolutely positioned element is placed relative to its
+               nearest positioned ancestor.</p>
+
+            <div class="absolute-parent">
+                <strong>Parent Container</strong>
+                <p>The orange box is positioned inside cont. </p>
+                
+
+                <div class="absolute-box">
+                    Absolute Box
+                </div>
+            </div>
+        </section>
+
+        
+       <div class="sticky-box">
+        <header> CSS sticky positioning</header>
+        <h2> STICKY </h2>
+        <p> sticky positioning of this html page carries the sticky section throughout the page when we scroll upto here</p>
+        </div>
+       
+    
+
+        <section>
+            <h2>5. Float Property</h2>
+            <p>The float property arranges these three boxes side by side.</p>
+
+            <div class="float-container">
+
+                <div class="float-box">
+                    <h3>Box One</h3>
+                    <p>Float: left</p>
+                </div>
+
+                <div class="float-box">
+                    <h3>Box Two</h3>
+                    <p>Float: left</p>
+                </div>
+
+                <div class="float-box">
+                    <h3>Box Three</h3>
+                    <p>Float: left</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>This webpage demonstrates static, relative, absolute, fixed
+               and sticky positioning, along with the float property.
+               Each method serves a different purpose in page layout.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        CSS Positioning Practical | Designed with HTML & CSS
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #9bf8fb;
+      color: #86055d;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    h2 {
+      color: #890fcad5;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 7px;
+      margin-top: 40px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    .custom-bullets {
+      list-style-image: url("https://cdn-icons-png.flaticon.com/16/785/785116.png");
+    }
+    dl {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    dt {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-top: 10px;
+    }
+    dd {
+      margin-left: 20px;
+      color: #555;
+    }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab 4 - HTML Lists</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    h2 {
+      color: #34495e;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    .custom-bullets {
+      list-style-image: url("https://cdn-icons-png.flaticon.com/16/785/785116.png");
+    }
+    dl {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    dt {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-top: 10px;
+    }
+    dd {
+      margin-left: 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lab 4: Working with HTML Lists</h1>
+
+  <!-- Unordered list: Grocery shopping list -->
+  <h2>1. Grocery Shopping List (Unordered List)</h2>
+  <ul style="list-style-type: square;">
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Bread</li>
+    <li>Tomatoes</li>
+    <li>Rice</li>
+    <li>Butter</li>
+  </ul>
+
+  <!-- Ordered list: Recipe -->
+  <h2>2. Recipe: How to Make Tea (Ordered List)</h2>
+  <ol type="1">
+    <li>Boil 2 cups of water in a pan.</li>
+    <li>Add 1-2 teaspoons of tea leaves.</li>
+    <li>Add sugar to taste.</li>
+    <li>Pour in 1/2 cup of milk.</li>
+    <li>Let it boil for 2-3 minutes on medium flame.</li>
+    <li>Strain into a cup and serve hot.</li>
+  </ol>
+
+  <!-- Nested list: Computer languages -->
+  <h2>3. Computer Languages (Nested List)</h2>
+  <ul style="list-style-type: disc;">
+    <li>Programming Languages
+      <ol type="i">
+        <li>Compiled Languages
+          <ul style="list-style-type: circle;">
+            <li>C</li>
+            <li>C++</li>
+            <li>Rust</li>
+          </ul>
+        </li>
+        <li>Interpreted Languages
+          <ul style="list-style-type: circle;">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+    <li>Markup Languages
+      <ol type="a">
+        <li>HTML</li>
+        <li>XML</li>
+      </ol>
+    </li>
+  </ul>
+
+  <!-- List with custom bullet image -->
+  <h2>4. Favorite Websites (Custom Bullet Image)</h2>
+  <ul class="custom-bullets">
+    <li>GitHub</li>
+    <li>Stack Overflow</li>
+    <li>MDN Web Docs</li>
+  </ul>
+
+  <!-- Definition list -->
+  <h2>5. Web-Related Terms (Definition List)</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language — used to create the structure of web pages.</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets — used to style and design the layout of web pages.</dd>
+
+    <dt>DOM</dt>
+    <dd>Document Object Model — a programming interface that represents the structure of a web page.</dd>
+  </dl>
+
+</body>
+</html>
